@@ -33,7 +33,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-            <div className={'h-[78vh] pt-6  pb-8 px-5 overflow-auto'}>
+            <div className={'h-[78vh] pt-6  pb-12 px-5 overflow-auto'}>
                 {!home ? <NewGoods tab={home} /> : <CardSection />}
             </div>
             <PageFilter open={open} close={setOpen} />
