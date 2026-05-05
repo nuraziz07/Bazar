@@ -59,7 +59,7 @@ const Basket = () => {
                     </h4>
                 </div>
 
-                <div className={'flex pt-5 pb-22 items-center justify-between'}>
+                <div className={'flex pt-5  items-center justify-between'}>
                     <h1 className={'text-[15px]'}>Умумий сумма:</h1>
                     <h4>
                         {priceOverall} <span>сум</span>
