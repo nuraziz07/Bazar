@@ -27,7 +27,7 @@ const Basket = () => {
                 <BasketItem />
             </div>
 
-            <div className={'mt-4 rounded-t-[30px] bg-gray-100 px-7'}>
+            <div className={'rounded-t-[30px] bg-gray-100 px-7'}>
                 <div
                     className={
                         'flex py-5 border-b-[2px] border-gray-500 items-center justify-between'
