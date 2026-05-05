@@ -97,7 +97,7 @@ const CardDetail = () => {
                             </div>
                             <div
                                 className={
-                                    'flex mt-5 px-4 gap-4 mb-10 pb-3 justify-evenly'
+                                    'flex mt-5 px-4 gap-4 mb-10 pb-10 justify-evenly'
                                 }
                             >
                                 <button
