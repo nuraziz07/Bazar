@@ -23,11 +23,11 @@ const Basket = () => {
                 <Trash size={25} onClick={() => dispatch({ type: 'reset' })} />
             </div>
 
-            <div className={'block h-[55vh] overflow-scroll px-10 pt-6'}>
+            <div className={'block h-[50vh] overflow-scroll px-10 pt-6'}>
                 <BasketItem />
             </div>
 
-            <div className={'rounded-t-[30px] bg-gray-100 px-7'}>
+            <div className={'rounded-t-[30px] bg-gray-100 px-7 '}>
                 <div
                     className={
                         'flex py-5 border-b-[2px] border-gray-500 items-center justify-between'
@@ -59,7 +59,7 @@ const Basket = () => {
                     </h4>
                 </div>
 
-                <div className={'flex pt-5 pb-12 items-center justify-between'}>
+                <div className={'flex pt-5 pb-22 items-center justify-between'}>
                     <h1 className={'text-[15px]'}>Умумий сумма:</h1>
                     <h4>
                         {priceOverall} <span>сум</span>
