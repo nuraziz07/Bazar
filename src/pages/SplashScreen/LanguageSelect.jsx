@@ -11,7 +11,7 @@ const LanguageSelect = () => {
         >
             <div>
                 <img src={Wolf} className={'w-[375px] h-[346px]'} alt="" />
-                <div className={'grid gap-5 pt-10 px-17'}>
+                <div className={'grid gap-5 pt-5 px-17'}>
                     <button
                         onClick={() => navigate('/home')}
                         className={

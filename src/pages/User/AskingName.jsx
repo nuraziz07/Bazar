@@ -41,7 +41,7 @@ const AskingName = () => {
                 }
             />
 
-            <div className={'flex mt-70 gap-3 justify-between'}>
+            <div className={'flex mt-30 gap-3 justify-between'}>
                 <button
                     onClick={() => navigate('/profile')}
                     className={
