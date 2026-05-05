@@ -6,7 +6,7 @@ import {
     Camera,
     LayoutGrid,
     LogOut,
-    MessageCircleQuestionMark,
+    BadgeQuestionMark,
 } from 'lucide-react'
 import useLocalStorage from '@/Hooks/useLocalStorage.js'
 import { Link } from 'react-router-dom'
@@ -156,9 +156,7 @@ const Profile = () => {
                         className={'border-b   px-7 pt-5 pb-4 border-gray-200'}
                     >
                         <div className={'flex gap-3'}>
-                            <MessageCircleQuestionMark
-                                className={'text-[#E1084D]'}
-                            />
+                            <BadgeQuestionMark className={'text-[#E1084D]'} />
                             <h3>Часто задаваемые вопросы</h3>
                         </div>
                     </div>
