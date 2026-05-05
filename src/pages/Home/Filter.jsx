@@ -38,7 +38,9 @@ const Filter = ({ opening }) => {
             />
             <Link to={'/basket'}>
                 <ShoppingCart
-                    className={'text-[#E1084D] absolute cursor-pointer'}
+                    className={
+                        'text-[#E1084D] transition-all duration-300 ease hover:scale-103 absolute cursor-pointer'
+                    }
                     size={23}
                 />
                 <h1

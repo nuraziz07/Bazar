@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div
-            className={'mobile min-h-screen border-l border-r border-gray-600'}
+            className={'mobile min-h-screen  border-l border-r border-gray-600'}
         >
             <Routes>
                 <Route index element={<SplashScreen />} />

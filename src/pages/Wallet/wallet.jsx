@@ -33,7 +33,7 @@ const Wallet = () => {
 
     return (
         <div className={'px-5'}>
-            <div className={'flex justify-between  pt-9 items-center'}>
+            <div className={'flex justify-between  pt-4 items-center'}>
                 <div
                     onClick={() => navigate('/profile')}
                     className={'flex items-center gap-2'}
@@ -46,7 +46,11 @@ const Wallet = () => {
                     <h3 className={'font-[400] text-[14px]'}>
                         Самира Темирова
                     </h3>
-                    <ChevronRight />
+                    <ChevronRight
+                        className={
+                            'transition-all duration-300 ease hover:translate-x-[3px] cursor-pointer'
+                        }
+                    />
                 </div>
 
                 <div className={'flex flex items-center gap-4'}>
@@ -102,7 +106,7 @@ const Wallet = () => {
                         <div
                             onClick={() => navigate('/ActiveElonlar')}
                             className={
-                                'bg-pink-100 rounded-xl flex items-center justify-between mt-3 px-3 py-3'
+                                'bg-pink-100 rounded-xl transition-all duration-300 ease hover:scale-103 cursor-pointer flex items-center justify-between mt-3 px-3 py-3'
                             }
                         >
                             <h1
@@ -123,7 +127,7 @@ const Wallet = () => {
                         <div
                             onClick={() => navigate('/NonActiveElonlar')}
                             className={
-                                'bg-pink-100 rounded-xl flex items-center justify-between mt-3 px-5 py-3'
+                                'bg-pink-100 rounded-xl transition-all duration-300 ease hover:scale-103 cursor-pointer flex items-center justify-between mt-3 px-5 py-3'
                             }
                         >
                             <h1

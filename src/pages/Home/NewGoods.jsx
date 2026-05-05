@@ -28,7 +28,7 @@ const NewGoods = () => {
                 return (
                     <div
                         className={
-                            'break-inside-avoid mb-5 border border-gray-200 h-fit rounded-[20px]'
+                            'break-inside-avoid mb-5 border transition-all duration-300 ease hover:scale-103 cursor-pointer border-gray-200 h-fit rounded-[20px]'
                         }
                         onClick={() => navigate(`/detail/${item.id}`)}
                         key={index}

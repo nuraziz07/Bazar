@@ -21,7 +21,7 @@ const Card = ({ data }) => {
                 return (
                     <div
                         className={
-                            'break-inside-avoid mb-5 border border-gray-200 h-fit rounded-[20px]'
+                            'break-inside-avoid hover:scale-103 transition-all duration-300 ease mb-5 border border-gray-200 h-fit rounded-[20px]'
                         }
                         key={index}
                     >

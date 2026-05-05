@@ -14,14 +14,14 @@ const Navbar = () => {
         <div className={'fixed bottom-0 bg-white w-full mobile'}>
             <ul
                 className={
-                    'flex w-full  border-t-[13px] border-[#EEEEF0] justify-evenly gap-5 px-5 items-center'
+                    'flex w-full   border-t-[13px] border-[#EEEEF0] justify-evenly gap-5 px-5 items-center'
                 }
             >
                 <Link to={'/home'}>
                     <li onClick={() => setSelecting('home')}>
                         <img
                             src={Logo}
-                            className={`${selecting === 'home' ? 'border border-[#E1084D] rounded-[50%]' : 'border-none'}`}
+                            className={`${selecting === 'home' ? 'border border-[#E1084D] transition-all duration-300 ease rounded-[50%]' : 'border-none'}`}
                             alt=""
                         />
                     </li>
@@ -29,13 +29,13 @@ const Navbar = () => {
                 <Link to={'/wallet'}>
                     <li onClick={() => setSelecting('wallet')}>
                         <NotepadText
-                            className={`${selecting === 'wallet' ? 'text-[#E1084D]' : 'text-[#6D7278]'}`}
+                            className={`${selecting === 'wallet' ? 'text-[#E1084D] transition-all duration-300 ease' : 'text-[#6D7278]'}`}
                         />
                     </li>
                 </Link>
                 <Link to={'/adding'}>
                     <li
-                        className={` bg-[#E1084D] bottom-5 text-white relative rounded-[50%]`}
+                        className={` bg-[#E1084D] bottom-5 transition-all duration-300 ease text-white relative rounded-[50%]`}
                     >
                         <Plus size={50} className={'p-2 '} />
                     </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <Link to={'/messages'}>
                     <li onClick={() => setSelecting('message')}>
                         <Mail
-                            className={`${selecting === 'message' ? 'text-[#E1084D]' : 'text-[#6D7278]'}`}
+                            className={`${selecting === 'message' ? 'text-[#E1084D] transition-all duration-300 ease' : 'text-[#6D7278]'}`}
                         />
                     </li>
                 </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
                                 `/${phoneNumber.length === 0 ? 'myaccount' : 'profile'}`
                             )
                         }
-                        className={`${selecting === 'account' ? 'text-[#E1084D]' : 'text-[#6D7278]'}`}
+                        className={`${selecting === 'account' ? 'text-[#E1084D] transition-all duration-300 ease' : 'text-[#6D7278]'}`}
                     />
                 </li>
             </ul>

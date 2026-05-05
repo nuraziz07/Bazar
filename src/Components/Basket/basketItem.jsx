@@ -13,7 +13,7 @@ const BasketItem = () => {
                         <div
                             key={index}
                             className={
-                                'flex justify-between mt-3 border gap-3 pr-5 rounded-[20px] border-gray-300 items-center'
+                                'flex justify-between transition-all duration-300 ease hover:scale-103 mt-3 border gap-3 pr-5 rounded-[20px] border-gray-300 items-center'
                             }
                         >
                             <img
@@ -30,6 +30,9 @@ const BasketItem = () => {
                                 </h5>
                                 <div className={'flex pt-2 gap-3'}>
                                     <Minus
+                                        className={
+                                            'transition-all duration-300 ease active:scale-90'
+                                        }
                                         onClick={() =>
                                             dispatch({
                                                 type: 'decrementing',
@@ -45,6 +48,9 @@ const BasketItem = () => {
                                         {item.quantity}
                                     </h4>
                                     <Plus
+                                        className={
+                                            'transition-all duration-300 ease active:scale-90'
+                                        }
                                         onClick={() => {
                                             dispatch({
                                                 type: 'adding',
@@ -55,6 +61,9 @@ const BasketItem = () => {
                                 </div>
                             </div>
                             <Trash
+                                className={
+                                    'transition-all duration-300 ease active:scale-103'
+                                }
                                 size={30}
                                 onClick={() =>
                                     dispatch({

@@ -20,14 +20,14 @@ const Home = () => {
                     }
                 >
                     <button
-                        className={`w-full ${home ? 'bg-white' : 'bg-none'} rounded-[5px] cursor-pointer py-2 `}
+                        className={`w-full transition-all duration-300 ease-in ${home ? 'bg-white' : 'bg-none'} rounded-[5px] cursor-pointer py-2 `}
                         onClick={() => setHome(true)}
                     >
                         Тавсия этамиз
                     </button>
                     <button
                         onClick={() => setHome(false)}
-                        className={`w-full rounded-[5px] cursor-pointer py-2 ${!home ? 'bg-white' : 'bg-none'}`}
+                        className={`w-full transition-all duration-300 ease-in rounded-[5px] cursor-pointer py-2 ${!home ? 'bg-white' : 'bg-none'}`}
                     >
                         Янгилари
                     </button>

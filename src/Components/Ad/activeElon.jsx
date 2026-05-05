@@ -18,7 +18,7 @@ const ActiveElon = () => {
                     <>
                         <div
                             className={
-                                'flex items-center gap-2 pt-6 justify-between'
+                                'flex items-center gap-2  pt-6 justify-between'
                             }
                         >
                             <img

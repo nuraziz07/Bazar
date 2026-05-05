@@ -15,6 +15,9 @@ const SameFile = () => {
                 {filteredData.map((item, index) => {
                     return (
                         <div
+                            className={
+                                'transition-all duration-300 ease hover:scale-103 cursor-pointer'
+                            }
                             onClick={() => navigate(`/detail/${item.id}`)}
                             key={index}
                         >

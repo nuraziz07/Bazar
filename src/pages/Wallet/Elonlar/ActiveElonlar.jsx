@@ -26,13 +26,13 @@ const ActiveElonlar = () => {
                 <div className={'flex items-center justify-center gap-6 pt-8'}>
                     <h1
                         onClick={() => setAll(true)}
-                        className={`border-b-[2px] pb-3 ${all ? 'border-[#E1084D]' : 'border-gray-400'} w-full text-center`}
+                        className={`border-b-[2px] pb-3 transition-all duration-300 ease cursor-pointer ${all ? 'border-[#E1084D]' : 'border-gray-400'} w-full text-center`}
                     >
                         Барча компаниялар
                     </h1>
                     <h1
                         onClick={() => setAll(false)}
-                        className={`border-b-[2px] pb-3 ${!all ? 'border-[#E1084D]' : 'border-gray-300'} w-full text-center`}
+                        className={`border-b-[2px] pb-3 transition-all duration-300 ease cursor-pointer ${!all ? 'border-[#E1084D]' : 'border-gray-300'} w-full text-center`}
                     >
                         Berry Berry
                     </h1>

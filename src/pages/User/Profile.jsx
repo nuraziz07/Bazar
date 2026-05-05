@@ -6,7 +6,7 @@ import {
     Camera,
     LayoutGrid,
     LogOut,
-    BadgeQuestionMark,
+    MessageCircleQuestionMark,
 } from 'lucide-react'
 import useLocalStorage from '@/Hooks/useLocalStorage.js'
 import { Link } from 'react-router-dom'
@@ -110,21 +110,21 @@ const Profile = () => {
                 <div className={'pt-5 flex justify-evenly gap-5'}>
                     <button
                         onClick={() => setColor('Рус')}
-                        className={` ${color === 'Рус' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full rounded-[8px]  py-3`}
+                        className={` ${color === 'Рус' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full transition-all duration-300 ease cursor-pointer rounded-[8px]  py-3`}
                     >
                         РУС
                     </button>
 
                     <button
                         onClick={() => setColor('Узб')}
-                        className={` ${color === 'Узб' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full rounded-[8px]  py-3`}
+                        className={` ${color === 'Узб' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full transition-all duration-300 ease cursor-pointer rounded-[8px]  py-3`}
                     >
                         УЗБ
                     </button>
 
                     <button
                         onClick={() => setColor('Ozb')}
-                        className={` ${color === 'Ozb' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full rounded-[8px] py-3`}
+                        className={` ${color === 'Ozb' ? 'bg-[#E1084D] text-white' : 'bg-gray-200 text-black'} w-full transition-all duration-300 ease cursor-pointer rounded-[8px] py-3`}
                     >
                         O’ZB
                     </button>
@@ -156,7 +156,9 @@ const Profile = () => {
                         className={'border-b   px-7 pt-5 pb-4 border-gray-200'}
                     >
                         <div className={'flex gap-3'}>
-                            <BadgeQuestionMark className={'text-[#E1084D]'} />
+                            <MessageCircleQuestionMark
+                                className={'text-[#E1084D]'}
+                            />
                             <h3>Часто задаваемые вопросы</h3>
                         </div>
                     </div>
